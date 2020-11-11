@@ -1,4 +1,4 @@
-#mkdir
+# mkdir
 
  -> create a directory 
  
