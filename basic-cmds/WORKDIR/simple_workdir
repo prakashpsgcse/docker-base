@@ -1,0 +1,12 @@
+FROM ubuntu
+RUN echo "building docker image from :" 
+RUN pwd
+RUN touch hello.txt
+RUN ls
+WORKDIR /users/prakash/app
+RUN pwd
+RUN touch hello.txt
+RUN ls
+CMD ["echo","Image created"] 
+
+
