@@ -1,0 +1,6 @@
+FROM ubuntu
+WORKDIR kafka /apps/install/kafka
+COPY kafka /apps/install/kafka
+RUN ls
+RUN ls /apps/install/kafka
+RUN pwd

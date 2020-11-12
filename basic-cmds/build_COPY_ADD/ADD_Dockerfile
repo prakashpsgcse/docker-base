@@ -1,0 +1,8 @@
+FROM ubuntu
+RUN apt-get update
+RUN apt-get install unzip
+RUN echo "building docker image from :" 
+WORKDIR /apps/install/kafka
+ADD kafka.tar.gz .
+RUN ls 
+RUN cd kafka && ls
