@@ -6,3 +6,4 @@ WORKDIR /apps/install/kafka
 ADD kafka.tar.gz .
 RUN ls 
 RUN cd kafka && ls
+
