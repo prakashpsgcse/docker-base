@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="daf93ce2-1fff-4073-8a51-f2b343266bcf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/WORKDIR/WORKDIR.md" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/WORKDIR/WORKDIR.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/WORKDIR/multiple_workdir" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/WORKDIR/multiple_workdir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/WORKDIR/simple_workdir" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/WORKDIR/simple_workdir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/ADD_Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/ADD_Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/COPY_Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/COPY_Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/build.md" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/build.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/kafka/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/kafka/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/kafka/NOTICE" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/kafka/NOTICE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/sample.sh" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/sample.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/unzip_docker" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/build_COPY_ADD/unzip_docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/layers/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/layers/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/layers/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/layers/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/layers/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/layers/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/layers/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/layers/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/layers/Sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/layers/Sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/layers/layers.md" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/layers/layers.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/mkdir/mkdir.md" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/mkdir/mkdir.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/mkdir/simple_cd" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/mkdir/simple_cd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basic-cmds/mkdir/simple_mkdir" beforeDir="false" afterPath="$PROJECT_DIR$/basic-cmds/mkdir/simple_mkdir" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lrb2gLtUWdo2SHBC1RKQSa8v46" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="daf93ce2-1fff-4073-8a51-f2b343266bcf" name="Default Changelist" comment="" />
+      <created>1608357956278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608357956278</updated>
+    </task>
+    <servers />
+  </component>
+</project>
