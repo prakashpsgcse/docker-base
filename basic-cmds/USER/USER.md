@@ -112,6 +112,7 @@ Example
 
 -> Short permissions 
 ->  {u/g/o} {+/-/=} {r/w/e}
+-> + r/w/x ->for all .ex +x -> everyone can execute  
 
 ```
 
@@ -229,9 +230,17 @@ nobody:x:65534:
 zookeeper:x:1000:
 zookeeper1:x:1001:
 zookeeper2:x:1002:
-
-
 ```
 
-->First create group then user 
+->Add group 
+addgroup {groupname}
+adduser -g {groupname} {username}
+```shell
+RUN addgroup -S kafka
+RUN adduser -D -G kafka kafka2
+RUN adduser kafka2 kafka
+-----------------------------------
+kafka2:x:1000:101:Linux User,,,:/home/kafka2:/bin/ash
+kafka:x:101:kafka2
+```
 

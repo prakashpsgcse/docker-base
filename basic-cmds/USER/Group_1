@@ -1,13 +1,15 @@
 FROM alpine:latest
 RUN echo "building docker image from :"
 RUN pwd
-RUN addgrp -D -S kafka
-RUN addgrp -D -S kafka1
-RUN adduser -D -S kafka2
-RUN addgrp -D zookeeper
-RUN adduser -D zookeeper1
-RUN adduser -D zookeeper2
-RUN cat /etc/passwd
-USER kafka
+RUN addgroup -S kafka
+RUN adduser -D -G kafka kafka2
+RUN adduser kafka2 kafka
+WORKDIR /opt/kafka
+RUN touch sample.sh
+RUN ls -ltr
+RUN chmod +x sample.sh
+RUN ls -ltr
+USER kafka2
+
 RUN cat /etc/passwd
 RUN cat /etc/group
