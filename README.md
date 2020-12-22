@@ -18,4 +18,8 @@ explain docker basic and advanced concepts
       docker ps -a
 ##### To remove all stopped containers 
      docker rm $(docker ps -a -q)
+##### To build with tag and file 
+     docker build . -t {img-tag} -f {dockerfile}
+##### To build without cache
+     docker build --no-cache . -t {img-tag} -f {dockerfile}
       

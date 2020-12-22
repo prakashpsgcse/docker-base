@@ -138,3 +138,100 @@ Example
  $ cat props.txt
  hello
 ```
+
+#USER in Docker
+```shell
+USER <user>[:<group>]
+USER <UID>[:<GID>]
+```
+->This will only USE/SET user for next running commands like RUN, CMD and ENTRYPOINT
+->This will not create USER 
+
+```shell
+FROM ubuntu
+RUN echo "building docker image from :"
+RUN pwd
+RUN adduser --disabled-password -shell /sbin/nologin kafka
+RUN cat /etc/passwd
+USER kafka
+RUN cat /etc/passwd
+```
+-> Without this "RUN adduser --disabled-password -shell /sbin/nologin kafka"
+   it will throw "linux spec user: unable to find user prakash: no matching entries in passwd file
+"
+-> First create USER and use it 
+
+
+## Options 
+
+-> Add just user without any flag 
+```shell
+SFROM alpine:latest
+RUN echo "building docker image from :"
+RUN pwd
+RUN adduser kafka
+RUN cat /etc/passwd
+USER kafka
+RUN cat /etc/pass
+```
+-> It fails with 
+
+```shell
+Step 4/7 : RUN adduser kafka
+ ---> Running in 40a656134215
+
+passwd: password for kafka is unchanged
+Changing password for kafka
+New password: 
+The command '/bin/sh -c adduser kafka' returned a non-zero code: 1
+
+```
+
+-> In linux "-D" -> dont create password
+
+```shell
+RUN adduser -D kafka
+kafka:x:1000:1000:Linux User,,,:/home/kafka:/bin/ash
+
+```
+
+-> Other options 
+  -h -> homedir 
+  -H -> dont create home dir 
+  - s -> shell
+  -S  -> System user
+    -G group
+    -u UserId
+-> Fir Systemuser UID will be 100 for others 1000
+    ``` shell
+       kafka:x:100:65533:Linux User,,,:/home/kafka:/sbin/nologin
+       zookeeper:x:1000:1000:Linux User,,,:/home/zookeeper:/bin/ash
+```
+
+->group file OP
+```
+nogroup:x:65533:kafka
+nobody:x:65534:
+zookeeper:x:1000:
+```
+
+-> for Sys user 
+```
+RUN adduser -D -S kafka
+RUN adduser -D -S kafka1
+RUN adduser -D -S kafka2
+RUN adduser -D zookeeper
+RUN adduser -D zookeeper1
+RUN adduser -D zookeeper2
+```
+nogroup:x:65533:kafka,kafka1,kafka2
+nobody:x:65534:
+zookeeper:x:1000:
+zookeeper1:x:1001:
+zookeeper2:x:1002:
+
+
+```
+
+->First create group then user 
+

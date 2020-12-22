@@ -1,0 +1,7 @@
+FROM ubuntu
+RUN echo "building docker image from :"
+RUN pwd
+RUN adduser --disabled-password -shell /sbin/nologin kafka
+RUN cat /etc/passwd
+USER kafka
+RUN cat /etc/passwd
