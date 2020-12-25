@@ -1,0 +1,6 @@
+FROM alpine
+RUN echo "testing -ex"
+
+RUN set -ex && touch t.txt && chmod 789 t.txt
+
+RUN echo "done"
