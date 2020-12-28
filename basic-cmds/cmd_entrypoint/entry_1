@@ -1,0 +1,14 @@
+FROM alpine
+RUN echo "testing entrypoint"
+ENTRYPOINT ["echo" ,"from ENTRYPOINT"]
+ENTRYPOINT echo "from eeeENTRYPOINT"
+ENTRYPOINT ["/bin/sh","-c","date"]
+
+ENTRYPOINT ["echo","hello from"]
+CMD ["cmd instruct"]
+
+ENTRYPOINT  echo "hello from shell form"
+CMD ["cmd instruct"]
+
+ENTRYPOINT ["echo","hello from"]
+#CMD ["cmd instruct"]

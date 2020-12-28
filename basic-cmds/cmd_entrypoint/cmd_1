@@ -1,0 +1,11 @@
+FROM alpine
+RUN echo "testing cmd"
+cmd ["echo" ,"fromcmd"]
+cmd ["bin/sh","echo" ,"fromcmd" ]
+#SHELL form
+CMD echo "i am echo using shell form"
+CMD date
+
+CMD ["/bin/sh","-c","date"]
+CMD ["/bin/sh","-c","ls"]
+CMD ["/bin/sh","-c","echo 'hello'"]
