@@ -135,5 +135,11 @@ sudo docker run --entrypoint [new_command] [docker_image]
 docker run --entrypoint echo entry  "i am overridding default entry point"
 -op-i am overridding default entry point
 ```
+
+#Default
+-> CMD/ENTRY point default is **/bin/sh -c**
+-> ANy command is given argument to this 
+-> CMD echo "hello" > /bin/sh -c echo "hello"
 https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/
 https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
+http://veithen.io/2014/11/16/sigterm-propagation.html
