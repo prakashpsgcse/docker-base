@@ -1,0 +1,15 @@
+FROM openjdk:8-jre-alpine
+RUN echo "Building Image with apache tomcat"
+
+RUN apk add --no-cache \
+    wget \
+    curl \
+    tar \
+    gzip
+WORKDIR /opt/tomcat
+ADD apache-tomcat-8.5.61.tar.gz  /opt/tomcat/
+RUN ls apache-tomcat-8.5.61
+
+EXPOSE 8080
+
+CMD ["/opt/tomcat/apache-tomcat-8.5.61/bin/catalina.sh", "run"]
